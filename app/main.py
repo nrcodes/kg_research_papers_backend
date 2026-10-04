@@ -18,7 +18,7 @@ app = FastAPI(title="Research Paper KG", lifespan=lifespan)
 os.environ["SSL_CERT_FILE"] = certifi.where()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],   # Vite dev server
+    allow_origins=["http://localhost:5173", "https://kg-research-papers-frontend-ex9pr4hla-nilas-projects-0730eb23.vercel.app"],   # Vite dev server
     allow_methods=["*"],
     allow_headers=["*"],
 )
